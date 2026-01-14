@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Leaf, Droplet, Globe } from "lucide-react";
 
 export default function Home() {
@@ -85,12 +86,16 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Visual Placeholder for Map */}
-            <div className="flex-1 w-full bg-gray-100 rounded-2xl h-[400px] flex items-center justify-center relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-tr from-gray-200 to-gray-50 opacity-50" />
-              <Globe className="h-32 w-32 text-gray-300 group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-gray-400 font-medium">Interactive Map Visualization</span>
+            {/* Global Map Visual */}
+            <div className="flex-1 w-full bg-gray-900 rounded-2xl h-[400px] flex items-center justify-center relative overflow-hidden group">
+              <Image
+                src="/images/logistics-map.png"
+                alt="Global Network Map"
+                fill
+                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                <span className="text-white font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">Global Network Visualization</span>
               </div>
             </div>
           </div>

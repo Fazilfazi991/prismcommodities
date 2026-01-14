@@ -3,12 +3,22 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
     return (
         <section className="relative h-[80vh] w-full overflow-hidden flex items-center justify-center bg-primary text-white">
-            {/* Background (Gradient or Image Placeholder) */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-[#0f172a] to-accent opacity-90 z-0" />
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/images/hero-bg.png"
+                    alt="Agricultural fields and oil refinery collage"
+                    fill
+                    className="object-cover opacity-40 mix-blend-overlay"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent" />
+            </div>
 
             {/* Decorative Elements */}
             <div className="absolute inset-0 z-0 overflow-hidden">

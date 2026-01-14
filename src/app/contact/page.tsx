@@ -106,15 +106,18 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Map Integration Placeholder */}
-            <section className="h-[400px] w-full bg-gray-200 relative">
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-                    <div className="text-center">
-                        <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-                        <p className="text-gray-500 font-medium">Google Maps Integration</p>
-                        <p className="text-gray-400 text-sm">Sheikh Zayed Road, Dubai</p>
-                    </div>
-                </div>
+            {/* Map Integration */}
+            <section className="h-[450px] w-full bg-gray-100 relative">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.123456789!2d55.270782!3d25.196924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433400000000%3A0x0000000000000000!2sEmarat%20Atrium!5e0!3m2!1sen!2sae!4v1600000000000!5m2!1sen!2sae&q=Emarat+Atrium,+Sheikh+Zayed+Road,+Dubai"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    title="Prism Commodities Location"
+                    className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700"
+                ></iframe>
             </section>
         </div>
     );

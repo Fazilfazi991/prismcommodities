@@ -1,4 +1,5 @@
 import { Target, Eye, Heart, BarChart3, Globe2 } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
     return (
@@ -73,28 +74,36 @@ export default function AboutPage() {
                             </div>
                         </div>
 
-                        {/* Visual Placeholder */}
-                        <div className="bg-white p-2 rounded-2xl shadow-xl h-[400px] flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
-                            <span className="text-gray-400 font-medium">[Image: Global Logistics Network]</span>
-                        </div>
-                    </div>
+                        {/* Integrated Network Visual */}
+                        <div className="relative bg-white rounded-2xl shadow-xl h-[400px] overflow-hidden">
+                            <Image
+                                src="/images/logistics-map.png"
+                                alt="Global Logistics Network"
+                                fill
+                                className="object-cover hover:scale-105 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                                <p className="text-white font-medium">Connecting continents with efficiency</p>
+                            </div>
+                        </div>           </div>
                 </div>
-            </section>
-
-            {/* Expertise */}
-            <section className="py-20">
-                <div className="container mx-auto px-4 md:px-6 text-center">
-                    <h2 className="text-3xl font-bold text-primary mb-12">Unrivaled Expertise</h2>
-                    <div className="max-w-4xl mx-auto">
-                        <p className="text-gray-600 text-lg mb-8">
-                            With years of experience in both agricultural and energy sectors, we have cultivated deep partnerships with globally renowned producers. Our expertise extends beyond trading; we manage the entire supply chain from origination to delivery.
-                        </p>
-                        <p className="text-gray-600 text-lg">
-                            This integrated approach allows us to mitigate risks, ensure quality control, and deliver exceptional value to our clients effectively.
-                        </p>
-                    </div>
-                </div>
-            </section>
         </div>
+            </section >
+
+        {/* Expertise */ }
+        < section className = "py-20" >
+            <div className="container mx-auto px-4 md:px-6 text-center">
+                <h2 className="text-3xl font-bold text-primary mb-12">Unrivaled Expertise</h2>
+                <div className="max-w-4xl mx-auto">
+                    <p className="text-gray-600 text-lg mb-8">
+                        With years of experience in both agricultural and energy sectors, we have cultivated deep partnerships with globally renowned producers. Our expertise extends beyond trading; we manage the entire supply chain from origination to delivery.
+                    </p>
+                    <p className="text-gray-600 text-lg">
+                        This integrated approach allows us to mitigate risks, ensure quality control, and deliver exceptional value to our clients effectively.
+                    </p>
+                </div>
+            </div>
+            </section >
+        </div >
     );
 }
