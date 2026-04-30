@@ -85,25 +85,25 @@ export default function AboutPage() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                                 <p className="text-white font-medium">Connecting continents with efficiency</p>
                             </div>
-                        </div>           </div>
+                        </div>
+                    </div>
                 </div>
-        </div>
-            </section >
+            </section>
 
-        {/* Expertise */ }
-        < section className = "py-20" >
-            <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl font-bold text-primary mb-12">Unrivaled Expertise</h2>
-                <div className="max-w-4xl mx-auto">
-                    <p className="text-gray-600 text-lg mb-8">
-                        With years of experience in both agricultural and energy sectors, we have cultivated deep partnerships with globally renowned producers. Our expertise extends beyond trading; we manage the entire supply chain from origination to delivery.
-                    </p>
-                    <p className="text-gray-600 text-lg">
-                        This integrated approach allows us to mitigate risks, ensure quality control, and deliver exceptional value to our clients effectively.
-                    </p>
+            {/* Expertise */}
+            <section className="py-20">
+                <div className="container mx-auto px-4 md:px-6 text-center">
+                    <h2 className="text-3xl font-bold text-primary mb-12">Unrivaled Expertise</h2>
+                    <div className="max-w-4xl mx-auto">
+                        <p className="text-gray-600 text-lg mb-8">
+                            With years of experience in both agricultural and energy sectors, we have cultivated deep partnerships with globally renowned producers. Our expertise extends beyond trading; we manage the entire supply chain from origination to delivery.
+                        </p>
+                        <p className="text-gray-600 text-lg">
+                            This integrated approach allows us to mitigate risks, ensure quality control, and deliver exceptional value to our clients effectively.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            </section >
-        </div >
+            </section>
+        </div>
     );
 }
