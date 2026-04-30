@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Leaf, Droplet, Globe } from "lucide-react";
+import { ArrowRight, Leaf, Droplet, Globe, Box } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Agricultural Card */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 group">
               <div className="h-14 w-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
@@ -45,6 +45,25 @@ export default function Home() {
               <Link href="/petroleum-services" className="inline-flex items-center text-primary font-semibold hover:text-accent transition-colors">
                 View Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
+            </div>
+
+            {/* Metals Card */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 group flex flex-col">
+              <div className="h-14 w-14 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 text-blue-500 group-hover:scale-110 transition-transform">
+                <Box className="h-7 w-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-3">Metals & Minerals</h3>
+              <p className="text-gray-600 mb-6 flex-grow">
+                Premium sourcing of ferrous and non-ferrous metals to support global manufacturing and industrial needs.
+              </p>
+              <div className="flex flex-col gap-3">
+                  <Link href="/metals/nonferrous" className="inline-flex items-center text-primary font-semibold hover:text-blue-500 transition-colors">
+                    Non-Ferrous Metals <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                  <Link href="/metals/ferrous" className="inline-flex items-center text-primary font-semibold hover:text-blue-500 transition-colors">
+                    Ferrous Metals <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+              </div>
             </div>
           </div>
         </div>
