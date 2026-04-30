@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "img1.wsimg.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.alatrading.com",
+      },
     ],
   },
 };
