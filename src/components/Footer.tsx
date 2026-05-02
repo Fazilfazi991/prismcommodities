@@ -35,6 +35,10 @@ export default function Footer() {
                                 <MapPin className="h-5 w-5 text-secondary shrink-0" />
                                 <span>P.O Box 450885, Office No. 147, B-Block, Emarat Atrium, Sheikh Zayed Road, Dubai</span>
                             </li>
+                            <li className="flex items-start space-x-2">
+                                <MapPin className="h-5 w-5 text-secondary shrink-0" />
+                                <span>Yard No 2201, Industrial Area Sajaa, Sharjah, UAE</span>
+                            </li>
                             <li className="flex items-center space-x-2">
                                 <Mail className="h-5 w-5 text-secondary shrink-0" />
                                 <a href="mailto:info@prismcommodities.com" className="hover:text-secondary">info@prismcommodities.com</a>

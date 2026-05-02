@@ -54,14 +54,11 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-primary mb-3">Metals & Minerals</h3>
               <p className="text-gray-600 mb-6 flex-grow">
-                Premium sourcing of ferrous and non-ferrous metals to support global manufacturing and industrial needs.
+                Premium sourcing of sustainable metal solutions to support global manufacturing and industrial needs.
               </p>
               <div className="flex flex-col gap-3">
                   <Link href="/metals/nonferrous" className="inline-flex items-center text-primary font-semibold hover:text-blue-500 transition-colors">
-                    Non-Ferrous Metals <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                  <Link href="/metals/ferrous" className="inline-flex items-center text-primary font-semibold hover:text-blue-500 transition-colors">
-                    Ferrous Metals <ArrowRight className="ml-2 h-4 w-4" />
+                    Explore Metal Products <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
               </div>
             </div>

@@ -16,7 +16,6 @@ const navItems = [
         name: "Metals", 
         href: "#",
         subItems: [
-            { name: "Ferrous", href: "/metals/ferrous" },
             { name: "Nonferrous", href: "/metals/nonferrous" },
         ]
     },
