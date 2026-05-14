@@ -51,11 +51,10 @@ export default function NonFerrousPage() {
                         {aluminiumProducts.map((product) => (
                             <div key={product.name} className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
                                 <div className="relative h-56 w-full overflow-hidden bg-white p-4">
-                                    <Image
+                                    <img
                                         src={product.img}
                                         alt={product.name}
-                                        fill
-                                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
                                 <div className="p-4 text-center border-t mt-auto">
